@@ -1,0 +1,900 @@
+{
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5-final"
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python3",
+   "display_name": "Python 3",
+   "language": "python"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2,
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "error",
+     "ename": "NameError",
+     "evalue": "name 'os' is not defined",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-1-debef9260715>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mos\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlistdir\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'C:\\\\Users'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m: name 'os' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "os.listdir('C:\\\\Users')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import shutil"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "error",
+     "ename": "NameError",
+     "evalue": "name 'src' is not defined",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-4-b3037dd017d7>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mshutil\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmove\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msrc\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mdst\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m: name 'src' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "shutil.move(src,dst)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "error",
+     "ename": "FileNotFoundError",
+     "evalue": "[Errno 2] No such file or directory: '/home/users/normrasmussen'",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mFileNotFoundError\u001b[0m                         Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-10-bd5c2f32ed17>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mos\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlistdir\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'/home/users/normrasmussen'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mFileNotFoundError\u001b[0m: [Errno 2] No such file or directory: '/home/users/normrasmussen'"
+     ]
+    }
+   ],
+   "source": [
+    "os.listdir('/home/users/normrasmussen')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "['.config',\n",
+       " 'Music',\n",
+       " '.wakatime.cfg',\n",
+       " '2021 Norm Rasmussen Resume.pdf',\n",
+       " '.condarc',\n",
+       " '.DS_Store',\n",
+       " '.CFUserTextEncoding',\n",
+       " '.vnc',\n",
+       " '.zshrc',\n",
+       " '.wakatime.db',\n",
+       " 'Pictures',\n",
+       " '.pylint.d',\n",
+       " '.zsh_history',\n",
+       " '.ipython',\n",
+       " 'Desktop',\n",
+       " 'Library',\n",
+       " 'iCloud Drive (Archive)',\n",
+       " '.zenmap',\n",
+       " '.cups',\n",
+       " 'Sites',\n",
+       " '.wdm',\n",
+       " 'Public',\n",
+       " '.dropbox',\n",
+       " '.msf4',\n",
+       " '.anaconda',\n",
+       " 'Movies',\n",
+       " 'Applications',\n",
+       " '.profile',\n",
+       " '.format() method.ipynb',\n",
+       " 'Dropbox',\n",
+       " 'opt',\n",
+       " '.Trash',\n",
+       " '.ipynb_checkpoints',\n",
+       " '.jupyter',\n",
+       " 'Documents',\n",
+       " '.wakatime.log',\n",
+       " '.swt',\n",
+       " '.mono',\n",
+       " '.vscode',\n",
+       " '.easyeda',\n",
+       " 'Downloads',\n",
+       " '.python_history',\n",
+       " '.gitconfig',\n",
+       " 'PassFiles',\n",
+       " '.zsh_sessions',\n",
+       " '.conda']"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 11
+    }
+   ],
+   "source": [
+    "os.listdir('/users/normrasmussen')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import send2trash"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "error",
+     "ename": "OSError",
+     "evalue": "File not found",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mOSError\u001b[0m                                   Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-13-0d17da7e2e5f>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0msend2trash\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msend2trash\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'practice.txt'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;32m~/opt/anaconda3/lib/python3.8/site-packages/send2trash/plat_osx.py\u001b[0m in \u001b[0;36msend2trash\u001b[0;34m(path)\u001b[0m\n\u001b[1;32m     43\u001b[0m     \u001b[0mopts\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mkFSPathMakeRefDoNotFollowLeafSymlink\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     44\u001b[0m     \u001b[0mop_result\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mFSPathMakeRefWithOptions\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mpath\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mopts\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mbyref\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfp\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 45\u001b[0;31m     \u001b[0mcheck_op_result\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mop_result\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     46\u001b[0m     \u001b[0mopts\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mkFSFileOperationDefaultOptions\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     47\u001b[0m     \u001b[0mop_result\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mFSMoveObjectToTrashSync\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mbyref\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfp\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mopts\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m~/opt/anaconda3/lib/python3.8/site-packages/send2trash/plat_osx.py\u001b[0m in \u001b[0;36mcheck_op_result\u001b[0;34m(op_result)\u001b[0m\n\u001b[1;32m     35\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mop_result\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     36\u001b[0m         \u001b[0mmsg\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mGetMacOSStatusCommentString\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mop_result\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdecode\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'utf-8'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 37\u001b[0;31m         \u001b[0;32mraise\u001b[0m \u001b[0mOSError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmsg\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     38\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     39\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0msend2trash\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mpath\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mOSError\u001b[0m: File not found"
+     ]
+    }
+   ],
+   "source": [
+    "send2trash.send2trash('practice.txt')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "'/Users/normrasmussen/Documents/Jupyter Notebook'"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 14
+    }
+   ],
+   "source": [
+    "pwd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "f = open('practice.txt','w+')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "f.write('practice.txt')\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "'/Users/normrasmussen/Documents/Jupyter Notebook'"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 19
+    }
+   ],
+   "source": [
+    "os.getcwd()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "['.DS_Store', 'Udemy_Pieran_Python_Bootcamp', 'practice.txt']"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 20
+    }
+   ],
+   "source": [
+    "os.listdir()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import datetime"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mytime = datetime.time(2,20)"
+   ]
+  },
+  {
+   "source": [
+    "mytime.minute"
+   ],
+   "cell_type": "code",
+   "metadata": {},
+   "execution_count": 24,
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "20"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 24
+    }
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 26
+    }
+   ],
+   "source": [
+    "mytime.hour"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "02:20:00\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(mytime)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "<module 'datetime' from '/Users/normrasmussen/opt/anaconda3/lib/python3.8/datetime.py'>"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 28
+    }
+   ],
+   "source": [
+    "datetime"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "<module 'datetime' from '/Users/normrasmussen/opt/anaconda3/lib/python3.8/datetime.py'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(datetime)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "datetime.time"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 32
+    }
+   ],
+   "source": [
+    "type(mytime)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "today = datetime.date.today()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "2021-02-04\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(today)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "2021"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 35
+    }
+   ],
+   "source": [
+    "today.year"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 36
+    }
+   ],
+   "source": [
+    "today.month"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 37
+    }
+   ],
+   "source": [
+    "today.day"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "'Thu Feb  4 00:00:00 2021'"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 38
+    }
+   ],
+   "source": [
+    "today.ctime()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from datetime import datetime"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mydatetime = datetime(2021,10,3,14,20,1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "2021-10-03 14:20:01\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(mydatetime)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mydatetime = mydatetime.replace(year=2022)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "datetime.datetime(2022, 10, 3, 14, 20, 1)"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 46
+    }
+   ],
+   "source": [
+    "mydatetime"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from datetime import date"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "date1 = date(2021,11,3)\n",
+    "date2 = date(2020,11,3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "result = date1 - date2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "datetime.timedelta"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 51
+    }
+   ],
+   "source": [
+    "type(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "365"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 52
+    }
+   ],
+   "source": [
+    "result.days"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "datetime1 = datetime(2021,11,3,22,0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "datetime2 = datetime(2020,11,3,12,0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "datetime.timedelta(days=365, seconds=36000)"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 55
+    }
+   ],
+   "source": [
+    "datetime1 - datetime2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "10.0"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 56
+    }
+   ],
+   "source": [
+    "36000/60/60"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mydiff = datetime1 - datetime2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "36000"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 58
+    }
+   ],
+   "source": [
+    "mydiff.seconds"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": [
+       "31572000.0"
+      ]
+     },
+     "metadata": {},
+     "execution_count": 60
+    }
+   ],
+   "source": [
+    "mydiff.total_seconds()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import math"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "Help on module math:\n\nNAME\n    math\n\nMODULE REFERENCE\n    https://docs.python.org/3.8/library/math\n    \n    The following documentation is automatically generated from the Python\n    source files.  It may be incomplete, incorrect or include features that\n    are considered implementation detail and may vary between Python\n    implementations.  When in doubt, consult the module reference at the\n    location listed above.\n\nDESCRIPTION\n    This module provides access to the mathematical functions\n    defined by the C standard.\n\nFUNCTIONS\n    acos(x, /)\n        Return the arc cosine (measured in radians) of x.\n    \n    acosh(x, /)\n        Return the inverse hyperbolic cosine of x.\n    \n    asin(x, /)\n        Return the arc sine (measured in radians) of x.\n    \n    asinh(x, /)\n        Return the inverse hyperbolic sine of x.\n    \n    atan(x, /)\n        Return the arc tangent (measured in radians) of x.\n    \n    atan2(y, x, /)\n        Return the arc tangent (measured in radians) of y/x.\n        \n        Unlike atan(y/x), the signs of both x and y are considered.\n    \n    atanh(x, /)\n        Return the inverse hyperbolic tangent of x.\n    \n    ceil(x, /)\n        Return the ceiling of x as an Integral.\n        \n        This is the smallest integer >= x.\n    \n    comb(n, k, /)\n        Number of ways to choose k items from n items without repetition and without order.\n        \n        Evaluates to n! / (k! * (n - k)!) when k <= n and evaluates\n        to zero when k > n.\n        \n        Also called the binomial coefficient because it is equivalent\n        to the coefficient of k-th term in polynomial expansion of the\n        expression (1 + x)**n.\n        \n        Raises TypeError if either of the arguments are not integers.\n        Raises ValueError if either of the arguments are negative.\n    \n    copysign(x, y, /)\n        Return a float with the magnitude (absolute value) of x but the sign of y.\n        \n        On platforms that support signed zeros, copysign(1.0, -0.0)\n        returns -1.0.\n    \n    cos(x, /)\n        Return the cosine of x (measured in radians).\n    \n    cosh(x, /)\n        Return the hyperbolic cosine of x.\n    \n    degrees(x, /)\n        Convert angle x from radians to degrees.\n    \n    dist(p, q, /)\n        Return the Euclidean distance between two points p and q.\n        \n        The points should be specified as sequences (or iterables) of\n        coordinates.  Both inputs must have the same dimension.\n        \n        Roughly equivalent to:\n            sqrt(sum((px - qx) ** 2.0 for px, qx in zip(p, q)))\n    \n    erf(x, /)\n        Error function at x.\n    \n    erfc(x, /)\n        Complementary error function at x.\n    \n    exp(x, /)\n        Return e raised to the power of x.\n    \n    expm1(x, /)\n        Return exp(x)-1.\n        \n        This function avoids the loss of precision involved in the direct evaluation of exp(x)-1 for small x.\n    \n    fabs(x, /)\n        Return the absolute value of the float x.\n    \n    factorial(x, /)\n        Find x!.\n        \n        Raise a ValueError if x is negative or non-integral.\n    \n    floor(x, /)\n        Return the floor of x as an Integral.\n        \n        This is the largest integer <= x.\n    \n    fmod(x, y, /)\n        Return fmod(x, y), according to platform C.\n        \n        x % y may differ.\n    \n    frexp(x, /)\n        Return the mantissa and exponent of x, as pair (m, e).\n        \n        m is a float and e is an int, such that x = m * 2.**e.\n        If x is 0, m and e are both 0.  Else 0.5 <= abs(m) < 1.0.\n    \n    fsum(seq, /)\n        Return an accurate floating point sum of values in the iterable seq.\n        \n        Assumes IEEE-754 floating point arithmetic.\n    \n    gamma(x, /)\n        Gamma function at x.\n    \n    gcd(x, y, /)\n        greatest common divisor of x and y\n    \n    hypot(...)\n        hypot(*coordinates) -> value\n        \n        Multidimensional Euclidean distance from the origin to a point.\n        \n        Roughly equivalent to:\n            sqrt(sum(x**2 for x in coordinates))\n        \n        For a two dimensional point (x, y), gives the hypotenuse\n        using the Pythagorean theorem:  sqrt(x*x + y*y).\n        \n        For example, the hypotenuse of a 3/4/5 right triangle is:\n        \n            >>> hypot(3.0, 4.0)\n            5.0\n    \n    isclose(a, b, *, rel_tol=1e-09, abs_tol=0.0)\n        Determine whether two floating point numbers are close in value.\n        \n          rel_tol\n            maximum difference for being considered \"close\", relative to the\n            magnitude of the input values\n          abs_tol\n            maximum difference for being considered \"close\", regardless of the\n            magnitude of the input values\n        \n        Return True if a is close in value to b, and False otherwise.\n        \n        For the values to be considered close, the difference between them\n        must be smaller than at least one of the tolerances.\n        \n        -inf, inf and NaN behave similarly to the IEEE 754 Standard.  That\n        is, NaN is not close to anything, even itself.  inf and -inf are\n        only close to themselves.\n    \n    isfinite(x, /)\n        Return True if x is neither an infinity nor a NaN, and False otherwise.\n    \n    isinf(x, /)\n        Return True if x is a positive or negative infinity, and False otherwise.\n    \n    isnan(x, /)\n        Return True if x is a NaN (not a number), and False otherwise.\n    \n    isqrt(n, /)\n        Return the integer part of the square root of the input.\n    \n    ldexp(x, i, /)\n        Return x * (2**i).\n        \n        This is essentially the inverse of frexp().\n    \n    lgamma(x, /)\n        Natural logarithm of absolute value of Gamma function at x.\n    \n    log(...)\n        log(x, [base=math.e])\n        Return the logarithm of x to the given base.\n        \n        If the base not specified, returns the natural logarithm (base e) of x.\n    \n    log10(x, /)\n        Return the base 10 logarithm of x.\n    \n    log1p(x, /)\n        Return the natural logarithm of 1+x (base e).\n        \n        The result is computed in a way which is accurate for x near zero.\n    \n    log2(x, /)\n        Return the base 2 logarithm of x.\n    \n    modf(x, /)\n        Return the fractional and integer parts of x.\n        \n        Both results carry the sign of x and are floats.\n    \n    perm(n, k=None, /)\n        Number of ways to choose k items from n items without repetition and with order.\n        \n        Evaluates to n! / (n - k)! when k <= n and evaluates\n        to zero when k > n.\n        \n        If k is not specified or is None, then k defaults to n\n        and the function returns n!.\n        \n        Raises TypeError if either of the arguments are not integers.\n        Raises ValueError if either of the arguments are negative.\n    \n    pow(x, y, /)\n        Return x**y (x to the power of y).\n    \n    prod(iterable, /, *, start=1)\n        Calculate the product of all the elements in the input iterable.\n        \n        The default start value for the product is 1.\n        \n        When the iterable is empty, return the start value.  This function is\n        intended specifically for use with numeric values and may reject\n        non-numeric types.\n    \n    radians(x, /)\n        Convert angle x from degrees to radians.\n    \n    remainder(x, y, /)\n        Difference between x and the closest integer multiple of y.\n        \n        Return x - n*y where n*y is the closest integer multiple of y.\n        In the case where x is exactly halfway between two multiples of\n        y, the nearest even value of n is used. The result is always exact.\n    \n    sin(x, /)\n        Return the sine of x (measured in radians).\n    \n    sinh(x, /)\n        Return the hyperbolic sine of x.\n    \n    sqrt(x, /)\n        Return the square root of x.\n    \n    tan(x, /)\n        Return the tangent of x (measured in radians).\n    \n    tanh(x, /)\n        Return the hyperbolic tangent of x.\n    \n    trunc(x, /)\n        Truncates the Real x to the nearest Integral toward 0.\n        \n        Uses the __trunc__ magic method.\n\nDATA\n    e = 2.718281828459045\n    inf = inf\n    nan = nan\n    pi = 3.141592653589793\n    tau = 6.283185307179586\n\nFILE\n    /Users/normrasmussen/opt/anaconda3/lib/python3.8/lib-dynload/math.cpython-38-darwin.so\n\n\n"
+     ]
+    }
+   ],
+   "source": [
+    "help(math)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# PYTHON DEBUGGER"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "error",
+     "ename": "TypeError",
+     "evalue": "can only concatenate list (not \"int\") to list",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-65-c48c89618c7b>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mresult\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0my\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mz\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m \u001b[0mresult2\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mx\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0my\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m: can only concatenate list (not \"int\") to list"
+     ]
+    }
+   ],
+   "source": [
+    "x = [1,2,3]\n",
+    "y = 2\n",
+    "z = 3\n",
+    "\n",
+    "result = y+z\n",
+    "result2 = x+y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pdb"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "stream",
+     "name": "stdout",
+     "text": [
+      "--Return--\n",
+      "None\n",
+      "> \u001b[0;32m<ipython-input-68-71b2d8556516>\u001b[0m(7)\u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n",
+      "\u001b[0;32m      4 \u001b[0;31m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0m\u001b[0;32m      5 \u001b[0;31m\u001b[0mresult_one\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0my\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mz\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0m\u001b[0;32m      6 \u001b[0;31m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0m\u001b[0;32m----> 7 \u001b[0;31m\u001b[0mpdb\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mset_trace\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0m\u001b[0;32m      8 \u001b[0;31m\u001b[0mresult_two\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mx\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0my\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0m\n",
+      "[1, 2, 3]\n",
+      "2\n",
+      "4\n",
+      "*** TypeError: unsupported operand type(s) for -: 'list' and 'int'\n",
+      "*** TypeError: unsupported operand type(s) for -: 'list' and 'int'\n",
+      "*** TypeError: unsupported operand type(s) for -: 'list' and 'int'\n",
+      "*** TypeError: unsupported operand type(s) for -: 'list' and 'int'\n",
+      "*** TypeError: unsupported operand type(s) for -: 'list' and 'int'\n",
+      "*** SyntaxError: unexpected EOF while parsing\n"
+     ]
+    },
+    {
+     "output_type": "error",
+     "ename": "BdbQuit",
+     "evalue": "",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mBdbQuit\u001b[0m                                   Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-68-71b2d8556516>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mresult_one\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0my\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mz\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 7\u001b[0;31m \u001b[0mpdb\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mset_trace\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      8\u001b[0m \u001b[0mresult_two\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mx\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0my\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m~/opt/anaconda3/lib/python3.8/bdb.py\u001b[0m in \u001b[0;36mtrace_dispatch\u001b[0;34m(self, frame, event, arg)\u001b[0m\n\u001b[1;32m     90\u001b[0m             \u001b[0;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdispatch_call\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mframe\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0marg\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     91\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mevent\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m'return'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 92\u001b[0;31m             \u001b[0;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdispatch_return\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mframe\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0marg\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     93\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mevent\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m'exception'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     94\u001b[0m             \u001b[0;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mdispatch_exception\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mframe\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0marg\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;32m~/opt/anaconda3/lib/python3.8/bdb.py\u001b[0m in \u001b[0;36mdispatch_return\u001b[0;34m(self, frame, arg)\u001b[0m\n\u001b[1;32m    152\u001b[0m             \u001b[0;32mfinally\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    153\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mframe_returning\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 154\u001b[0;31m             \u001b[0;32mif\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mquitting\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0;32mraise\u001b[0m \u001b[0mBdbQuit\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    155\u001b[0m             \u001b[0;31m# The user issued a 'next' or 'until' command.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    156\u001b[0m             \u001b[0;32mif\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mstopframe\u001b[0m \u001b[0;32mis\u001b[0m \u001b[0mframe\u001b[0m \u001b[0;32mand\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mstoplineno\u001b[0m \u001b[0;34m!=\u001b[0m \u001b[0;34m-\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mBdbQuit\u001b[0m: "
+     ]
+    }
+   ],
+   "source": [
+    "x = [1,2,3]\n",
+    "y = 2\n",
+    "z = 3\n",
+    "\n",
+    "result_one = y+z\n",
+    "\n",
+    "pdb.set_trace()\n",
+    "result_two = x+y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ]
+}
