@@ -31,3 +31,8 @@ A few videos should be re-done for 2021 and I thought the second half of the cou
 Overall, a good way to get your feet wet and I found myself reviewing other's code and understanding it thanks to this course. But I would think about what you want to do with Python and sign up for a course for after this one that drills into how you want to apply Python (CircuitPython, Data Science, Automation, Machine Learning, Games and DIY, etc.)
 
 Contact me with any questions! 
+
+Certificate of completion. Not that it means much. 🙃
+
+
+<img src="https://imgur.com/a/R7M0YZ2" alt="Image of Certificate" width="300" height="100" />
