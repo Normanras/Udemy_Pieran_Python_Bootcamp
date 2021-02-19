@@ -35,4 +35,4 @@ Contact me with any questions!
 Certificate of completion. Not that it means much. 🙃
 
 
-<img src="https://i.imgur.com/MV2jzSi.png" alt="Image of Certificate" width="300" height="100" />
+<img src="https://i.imgur.com/MV2jzSi.png" alt="Image of Certificate" width="500" height="400" />
